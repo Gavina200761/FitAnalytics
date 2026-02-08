@@ -119,3 +119,17 @@ if __name__ == "__main__":
     single_heap.remove_min()
     print(f"After removal, heap is empty: {len(single_heap.data) == 0}")
 
+# MEMO 
+# A tree structure is ideal for representing a doctor hierarchy because it models reporting and organizational chains of command. 
+# Each doctor has a single supervisor, parent, and can oversee multiple subordinates (children). This is very similiar to real world 
+# medical departments where authority rains down. Trees also enable efficient searching for specific doctors and allow easy 
+# traversal of entire reporting structures.
+
+# Preorder traversal is useful when processing a hierarchy top-down. Traversal works well for outputting data in a partially sorted manner, 
+# like generating an organized list of doctors by department level. Postorder traversal is essential for bottom-up processing. 
+# These methods are critical for different reporting and management tasks in organizational hierarchies.
+
+# Heaps are essential for emergency intake systems because they automatically maintain priority ordering with minimal computation. 
+# Unlike sorting an entire patient list each time someone arrives, a min-heap insertion operates in O(log n) time, meaning that a hospital 
+# can instantly add new patients and always know who needs immediate attention without expensive sorting operations. As patients are 
+# treated and removed, the heap reorganizes itself. This real-time priority management is crucial in emergency rooms where delays can be life-threatening.
